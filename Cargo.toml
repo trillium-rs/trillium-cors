@@ -1,0 +1,24 @@
+[package]
+name = "trillium-cors"
+version = "0.1.0"
+edition = "2024"
+description = "cross-origin resource sharing for trillium.rs"
+license = "MIT OR Apache-2.0"
+repository = "https://github.com/trillium-rs/trillium-cors"
+readme = "README.md"
+keywords = ["trillium", "cors", "http", "async"]
+categories = ["web-programming::http-server", "web-programming"]
+
+[package.metadata.docs.rs]
+all-features = true
+
+[dependencies]
+log = "0.4.29"
+trillium = "1.4.0"
+url = "2.5.8"
+
+[dev-dependencies]
+async-channel = "2.5.0"
+trillium-logger = "0.5.5"
+trillium-smol = "0.7.0"
+trillium-testing = "0.10.2"
